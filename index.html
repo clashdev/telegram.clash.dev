@@ -203,7 +203,6 @@
 </head>
 
 <body>
-    <script src="./config.js"></script>
     <div class="header">
         <a href="https://telegram.org" target="_blank" rel="external noopener noreferrer">Don't have <strong>Telegram</strong> yet? Try it now!</a>
     </div>
@@ -224,6 +223,10 @@
     <div class="footer">
         <p>If you have <strong>Telegram</strong> installed and the group is opened, you can use the button to join the group. If the button doesn't work, use the group link instead.</p>
     </div>
+    <script>
+        window.TG_GROUP_TYPE = 'private'; // Can be 'public', 'private' or 'disabled'
+        window.TG_GROUP_LINK = 'D4mVX0n-n5mOK6YO_W3_Og'; // t.me/{slug} or t.me/joinchat/{slug}. Depends on the group type.
+    </script>
     <script>
         (function () {
             var tgLink, tgAction;
